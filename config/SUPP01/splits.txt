@@ -19,6 +19,7 @@ Runtime.PPCEABI.H/global_destructor_chain.c:
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x801C89AC end:0x801C8A1C
-	.ctors      start:0x801DD000 end:0x801DD004
-	.dtors      start:0x801DD0C0 end:0x801DD0C8
+	.ctors      start:0x801DD000 end:0x801DD004 rename:.ctors$10
+	.dtors      start:0x801DD0C0 end:0x801DD0C4 rename:.dtors$10
+	.dtors      start:0x801DD0C4 end:0x801DD0C8 rename:.dtors$15
 	.sdata      start:0x802F5CF0 end:0x802F5CF8
