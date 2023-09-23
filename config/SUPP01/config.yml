@@ -3,6 +3,7 @@ hash: 93b41984897b3f1622dcf56a56d89b56a85bb47f
 symbols: config/SUPP01/symbols.txt
 splits: config/SUPP01/splits.txt
 mw_comment_version: 15 # GC Linker 3.0
+ldscript_template: config/SUPP01/ldscript.tpl
 
 modules:
 - object: orig/SUPP01/rel/boot.rel
