@@ -7,6 +7,6 @@ _ctors = .ctors:0x00000000; // type:label scope:global data:4byte
 _dtors = .dtors:0x00000000; // type:label scope:global data:4byte
 lbl_1_rodata_0 = .rodata:0x00000000; // type:object size:0x10 data:float
 lbl_1_data_0 = .data:0x00000000; // type:object size:0x10 data:string
-lbl_1_data_10 = .data:0x00000010; // type:object size:0x78
+lbl_1_data_10 = .data:0x00000010; // type:object size:0x78 data:string_table
 lbl_1_data_88 = .data:0x00000088; // type:object size:0x10
 lbl_1_bss_0 = .bss:0x00000000; // type:object size:0x4 data:4byte
