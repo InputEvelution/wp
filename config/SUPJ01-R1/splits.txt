@@ -13,6 +13,16 @@ Sections:
 	.sdata2     type:rodata
 	.sbss2      type:bss
 
+wp/frand.c:
+	.text       start:0x8006ADA0 end:0x8006AFD0
+	.sbss       start:0x802F3F38 end:0x802F3F40
+	.sdata2     start:0x802F4CE8 end:0x802F4CF8
+
+Revolution/HBM/HBMFrameController.cpp:
+	.text       start:0x80075AF0 end:0x80075CA0
+	.rodata     start:0x801E6428 end:0x801E6430
+	.data       start:0x80208C70 end:0x80208C98
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C7414 end:0x801C7474
 	.sbss       start:0x802F4928 end:0x802F4930

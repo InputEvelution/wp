@@ -122,7 +122,7 @@ if not is_windows():
 
 # Tool versions
 config.compilers_tag = "1"
-config.dtk_tag = "v0.5.3"
+config.dtk_tag = "v0.5.7"
 config.sjiswrap_tag = "v1.1.1"
 config.wibo_tag = "0.5.1"
 
@@ -155,8 +155,8 @@ cflags_base = [
     "-fp_contract on",
     "-str reuse",
     "-i include",
-    "-i libc",
 	"-enc SJIS",
+    "-func_align 16",
     f"-DVERSION={version_num}",
 ]
 
@@ -170,10 +170,11 @@ else:
 cflags_runtime = [
     *cflags_base,
     "-use_lmw_stmw on",
-    "-str reuse,pool,readonly",
+    "-str pool,readonly,reuse",
     "-gccinc",
     "-common off",
 	"-inline auto",
+    "-func_align 4",
 ]
 
 # REL flags
@@ -183,11 +184,11 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "GC/3.0"
+config.linker_version = "Wii/1.3"
 
 
-# Helper function for Dolphin libraries
-def DolphinLib(lib_name, objects):
+# Helper function for Revolution libraries
+def RevolutionLib(lib_name, objects):
     return {
         "lib": lib_name,
         "mw_version": "Wii/1.1",
@@ -197,11 +198,22 @@ def DolphinLib(lib_name, objects):
     }
 
 
-# Helper function for REL script objects
+# Helper function for NW4R libraries
+def NW4RLib(lib_name, objects):
+    return {
+        "lib": lib_name,
+        "mw_version": "Wii/1.1",
+        "cflags": cflags_base,
+        "host": False,
+        "objects": objects,
+    }
+
+
+# Helper function for RELs
 def Rel(lib_name, objects):
     return {
         "lib": lib_name,
-        "mw_version": "Wii/1.3",
+        "mw_version": config.linker_version,
         "cflags": cflags_rel,
         "host": True,
         "objects": objects,
@@ -215,14 +227,145 @@ config.warn_missing_config = True
 config.warn_missing_source = False
 config.libs = [
     {
+        "lib": "wp",
+        "mw_version": config.linker_version,
+        "cflags": cflags_base,
+        "host": False,
+        "objects": [
+            Object(NonMatching, "wp/frand.c"),
+        ],
+    },
+    {
+        "lib": "homebuttonLib",
+        "mw_version": "Wii/1.1",
+        "cflags": cflags_rel,
+        "host": False,
+        "objects": [
+            Object(NonMatching, "Revolution/HBM/HBMFrameController.cpp"),
+            Object(NonMatching, "Revolution/HBM/HBMAnmController.cpp"),
+            Object(NonMatching, "Revolution/HBM/HBMGUIManager.cpp"),
+            Object(NonMatching, "Revolution/HBM/HBMController.cpp"),
+            Object(NonMatching, "Revolution/HBM/HBMRemoteSpk.cpp"),
+            Object(NonMatching, "Revolution/HBM/HBMAxSound.cpp"),
+            Object(NonMatching, "Revolution/HBM/HBMCommon.cpp"),
+            Object(NonMatching, "Revolution/HBM/HBMBase.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_animation.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_arcResourceAccessor.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_bounding.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_common.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_drawInfo.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_group.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_layout.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_material.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_pane.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_picture.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_resourceAccessor.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_textBox.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/lyt/lyt_window.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/math/math_triangular.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_binaryFileFormat.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_CharStrmReader.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_CharWriter.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_Font.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_LinkList.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_list.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_ResFont.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_ResFontBase.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_TagProcessorBase.cpp"),
+            Object(NonMatching, "Revolution/HBM/nw4hbm/ut/ut_TextWriterBase.cpp"),
+            Object(NonMatching, "Revolution/HBM/mix.cpp"),
+            Object(NonMatching, "Revolution/HBM/syn.cpp"),
+            Object(NonMatching, "Revolution/HBM/synctrl.cpp"),
+            Object(NonMatching, "Revolution/HBM/synenv.cpp"),
+            Object(NonMatching, "Revolution/HBM/synmix.cpp"),
+            Object(NonMatching, "Revolution/HBM/synpitch.cpp"),
+            Object(NonMatching, "Revolution/HBM/synsample.cpp"),
+            Object(NonMatching, "Revolution/HBM/synvoice.cpp"),
+            Object(NonMatching, "Revolution/HBM/seq.cpp"),
+        ],
+    },
+    {
+        "lib": "RVLFaceLib",
+        "mw_version": "Wii/1.1",
+        "cflags": cflags_base,
+        "host": False,
+        "objects": [
+            Object(NonMatching, "RVLFaceLib/RFL_System.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_NANDLoader.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_NANDAccess.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_Model.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_MakeTex.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_Icon.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_HiddenDatabase.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_Database.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_Controller.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_MiddleDatabase.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_DefaultDatabase.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_DataUtility.c"),
+            Object(NonMatching, "RVLFaceLib/RFL_Format.c"),
+        ],
+    },
+    NW4RLib(
+        "ef",
+        [
+            Object(NonMatching, "NW4R/ef/ef_draworder.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_effect.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_effectsystem.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_emitter.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_animcurve.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_postfield.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_particle.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_particlemanager.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_resource.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_util.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_handle.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_emitterform.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_creationqueue.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_emform.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_point.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_line.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_disc.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_sphere.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_cylinder.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_torus.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_cube.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawstrategybuilder.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawstrategyimpl.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawbillboardstrategy.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawdirectionalstrategy.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawfreestrategy.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawlinestrategy.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawpointstrategy.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawstripestrategy.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_drawsmoothstripestrategy.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_res_emitter_ac.cpp"),
+            Object(NonMatching, "NW4R/ef/ef_res_emitterparam_ac.cpp"),
+            # TODO: Figure out names for other ef_res funcs
+        ],
+    ),
+	{
         "lib": "Runtime.PPCEABI.H",
         "mw_version": config.linker_version,
         "cflags": cflags_runtime,
         "host": False,
         "objects": [
-            Object(NonMatching, "Runtime.PPCEABI.H/global_destructor_chain.c"),
-            Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
+            Object(Matching, "Runtime.PPCEABI.H/global_destructor_chain.c"),
+            Object(Matching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
             # TODO: need to implement all
+        ],
+    },
+    # TODO: RELs
+    {
+        "lib": "REL",
+        "mw_version": config.linker_version,
+        "cflags": cflags_rel,
+        "host": False,
+        "objects": [
+            Object(
+                Matching,
+                "REL/global_destructor_chain.c",
+                source="Runtime.PPCEABI.H/global_destructor_chain.c",
+            ),
         ],
     },
 ]

@@ -1,71 +1,86 @@
 #ifndef __PPC_EABI_LINKER
 #define __PPC_EABI_LINKER
 
-extern char _stack_addr[];
-extern char _stack_end[];
-extern char _heap_addr[];
-extern char _heap_end[];
-extern const char _fextabindex_rom[];
-extern char _fextabindex[];
-extern char _eextabindex[];
+__declspec(section ".init") extern char _stack_addr[];
+__declspec(section ".init") extern char _stack_end[];
+__declspec(section ".init") extern char _heap_addr[];
+__declspec(section ".init") extern char _heap_end[];
 
-extern char _SDA_BASE_[];
-extern char _SDA2_BASE_[];
+__declspec(section ".init") extern const char _fextabindex_rom[];
+__declspec(section ".init") extern char _fextabindex[];
+__declspec(section ".init") extern char _eextabindex[];
+
+__declspec(section ".init") extern char _SDA_BASE_[];
+__declspec(section ".init") extern char _SDA2_BASE_[];
 
 typedef struct __rom_copy_info {
-    char* rom;
-    char* addr;
-    unsigned int size;
+  char* rom;
+  char* addr;
+  unsigned int size;
 } __rom_copy_info;
 
-extern __rom_copy_info _rom_copy_info[];
+__declspec(section ".init") extern __rom_copy_info _rom_copy_info[];
 
 typedef struct __bss_init_info {
-    char* addr;
-    unsigned int size;
+  char* addr;
+  unsigned int size;
 } __bss_init_info;
 
-extern __bss_init_info _bss_init_info[];
+__declspec(section ".init") extern __bss_init_info _bss_init_info[];
 
 typedef struct __eti_init_info {
-    void* eti_start;
-    void* eti_end;
-    void* code_start;
-    unsigned long code_size;
+  void* eti_start;
+  void* eti_end;
+  void* code_start;
+  unsigned long code_size;
 } __eti_init_info;
 
-extern __eti_init_info _eti_init_info[];
-extern const char _f_init_rom[];
-extern char _f_init[];
-extern char _e_init[];
-extern const char _f_text_rom[];
-extern char _f_text[];
-extern char _e_text[];
-extern const char _f_rodata_rom[];
-extern char _f_rodata[];
-extern char _e_rodata[];
-extern const char _fextab_rom[];
-extern char _fextab[];
-extern char _eextab[];
-extern const char _f_data_rom[];
-extern char _f_data[];
-extern char _e_data[];
-extern char _f_bss[];
-extern char _e_bss[];
-extern const char _f_sdata_rom[];
-extern char _f_sdata[];
-extern char _e_sdata[];
-extern char _f_sbss[];
-extern char _e_sbss[];
-extern const char _f_sdata2_rom[];
-extern char _f_sdata2[];
-extern char _e_sdata2[];
-extern char _f_sbss2[];
-extern char _e_sbss2[];
-extern const char _f_PPC_EMB_sdata0_rom[];
-extern char _f_PPC_EMB_sdata0[];
-extern char _e_PPC_EMB_sdata0[];
-extern char _f_PPC_EMB_sbss0[];
-extern char _e_PPC_EMB_sbss0[];
+__declspec(section ".init") extern __eti_init_info _eti_init_info[];
 
-#endif  // __PPC_EABI_LINKER
+
+__declspec(section ".init") extern const char _f_init_rom[];
+__declspec(section ".init") extern char _f_init[];
+__declspec(section ".init") extern char _e_init[];
+
+__declspec(section ".init") extern const char _f_text_rom[];
+__declspec(section ".init") extern char _f_text[];
+__declspec(section ".init") extern char _e_text[];
+
+__declspec(section ".init") extern const char _f_rodata_rom[];
+__declspec(section ".init") extern char _f_rodata[];
+__declspec(section ".init") extern char _e_rodata[];
+
+__declspec(section ".init") extern const char _fextab_rom[];
+__declspec(section ".init") extern char _fextab[];
+__declspec(section ".init") extern char _eextab[];
+
+__declspec(section ".init") extern const char _f_data_rom[];
+__declspec(section ".init") extern char _f_data[];
+__declspec(section ".init") extern char _e_data[];
+
+__declspec(section ".init") extern char _f_bss[];
+__declspec(section ".init") extern char _e_bss[];
+
+__declspec(section ".init") extern const char _f_sdata_rom[];
+__declspec(section ".init") extern char _f_sdata[];
+__declspec(section ".init") extern char _e_sdata[];
+
+__declspec(section ".init") extern char _f_sbss[];
+__declspec(section ".init") extern char _e_sbss[];
+
+__declspec(section ".init") extern const char _f_sdata2_rom[];
+__declspec(section ".init") extern char _f_sdata2[];
+__declspec(section ".init") extern char _e_sdata2[];
+
+__declspec(section ".init") extern char _f_sbss2[];
+__declspec(section ".init") extern char _e_sbss2[];
+
+__declspec(section ".init") extern const char _f_PPC_EMB_sdata0_rom[];
+__declspec(section ".init") extern char _f_PPC_EMB_sdata0[];
+__declspec(section ".init") extern char _e_PPC_EMB_sdata0[];
+
+__declspec(section ".init") extern char _f_PPC_EMB_sbss0[];
+__declspec(section ".init") extern char _e_PPC_EMB_sbss0[];
+
+
+#endif // __PPC_EABI_LINKER

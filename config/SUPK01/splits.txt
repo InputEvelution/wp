@@ -13,6 +13,11 @@ Sections:
 	.sbss2      type:bss
 	.bss        type:bss
 
+wp/frand.c:
+	.text       start:0x8006B410 end:0x8006B640
+	.sbss       start:0x802337F8 end:0x80233800
+	.sdata2     start:0x802345C8 end:0x802345D8
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C7FC4 end:0x801C8024
 	.sbss       start:0x802341F8 end:0x80234200

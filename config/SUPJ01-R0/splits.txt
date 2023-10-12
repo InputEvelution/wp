@@ -13,6 +13,11 @@ Sections:
 	.sdata2     type:rodata
 	.sbss2      type:bss
 
+wp/frand.c:
+	.text       start:0x8006ADA0 end:0x8006AFD0
+	.sbss       start:0x802F3F38 end:0x802F3F40
+	.sdata2     start:0x802F4CE8 end:0x802F4CF8
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C73F4 end:0x801C7454
 	.sbss       start:0x802F4928 end:0x802F4930

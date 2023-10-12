@@ -13,6 +13,460 @@ Sections:
 	.sdata2     type:rodata
 	.sbss2      type:bss
 
+wp/frand.c:
+	.text       start:0x8006B3F0 end:0x8006B620
+	.sbss       start:0x802F5E78 end:0x802F5E80
+	.sdata2     start:0x802F6C28 end:0x802F6C38
+
+Revolution/HBM/HBMFrameController.cpp:
+	.text       start:0x80076170 end:0x80076320
+	.rodata     start:0x801E8370 end:0x801E8378
+	.data       start:0x8020AB20 end:0x8020AB48
+
+Revolution/HBM/HBMAnmController.cpp:
+	.text       start:0x80076320 end:0x80076430
+	.data       start:0x8020AB48 end:0x8020AB90
+
+Revolution/HBM/HBMGUIManager.cpp:
+	.text       start:0x80076430 end:0x80077C50
+	.rodata     start:0x801E8378 end:0x801E8388
+	.data       start:0x8020AB90 end:0x8020AE00
+	.bss        start:0x80247378 end:0x80247380
+
+Revolution/HBM/HBMController.cpp:
+	.text       start:0x80077C50 end:0x80078890
+	.rodata     start:0x801E8388 end:0x801E8398
+	.bss        start:0x80247380 end:0x80247520
+
+Revolution/HBM/HBMRemoteSpk.cpp:
+	.text       start:0x80078890 end:0x800791B0
+	.data       start:0x8020AE00 end:0x8020AE30
+	.bss        start:0x80247520 end:0x80247528
+
+Revolution/HBM/HBMAxSound.cpp:
+	.text       start:0x800791B0 end:0x80079CE0
+	.rodata     start:0x801E8398 end:0x801E83D0
+	.data       start:0x8020AE30 end:0x8020B180
+	.bss        start:0x80247528 end:0x80247530
+
+Revolution/HBM/HBMCommon.cpp:
+	.text       start:0x80079CE0 end:0x8007A070
+	.data       start:0x8020B180 end:0x8020B1D0
+	.bss        start:0x80247530 end:0x80247540
+
+Revolution/HBM/HBMBase.cpp:
+	.text       start:0x8007A070 end:0x80082960
+	.rodata     start:0x801E83D0 end:0x801E8750
+	.data       start:0x8020B1D0 end:0x8020BEE8
+	.bss        start:0x80247540 end:0x802475C0
+
+Revolution/HBM/nw4hbm/lyt/lyt_animation.cpp:
+	.text       start:0x80082960 end:0x80083510
+	.rodata     start:0x801E8750 end:0x801E8770
+	.data       start:0x8020BEE8 end:0x8020BF68
+
+Revolution/HBM/nw4hbm/lyt/lyt_arcResourceAccessor.cpp:
+	.text       start:0x80083510 end:0x800838B0
+	.data       start:0x8020BF68 end:0x8020BFE8
+
+Revolution/HBM/nw4hbm/lyt/lyt_bounding.cpp:
+	.text       start:0x800838B0 end:0x80083A30
+	.ctors      start:0x801DD034 end:0x801DD038
+	.data       start:0x8020BFE8 end:0x8020C0D0
+	.bss        start:0x802475C0 end:0x802475C8
+
+Revolution/HBM/nw4hbm/lyt/lyt_common.cpp:
+	.text       start:0x80083A30 end:0x800848B0
+	.rodata     start:0x801E8770 end:0x801E8780
+	.bss        start:0x802475C8 end:0x802475F0
+
+Revolution/HBM/nw4hbm/lyt/lyt_drawInfo.cpp:
+	.text       start:0x800848B0 end:0x80084970
+	.rodata     start:0x801E8780 end:0x801E8788
+	.data       start:0x8020C0D0 end:0x8020C100
+
+Revolution/HBM/nw4hbm/lyt/lyt_group.cpp:
+	.text       start:0x80084970 end:0x80084CC0
+	.data       start:0x8020C100 end:0x8020C128
+
+Revolution/HBM/nw4hbm/lyt/lyt_layout.cpp:
+	.text       start:0x80084CC0 end:0x80085960
+	.rodata     start:0x801E8788 end:0x801E8790
+	.data       start:0x8020C128 end:0x8020C178
+	.bss        start:0x802475F0 end:0x802475F8
+
+Revolution/HBM/nw4hbm/lyt/lyt_material.cpp:
+	.text       start:0x80085960 end:0x80088BD0
+	.rodata     start:0x801E8790 end:0x801E87C0
+	.data       start:0x8020C178 end:0x8020C200
+
+Revolution/HBM/nw4hbm/lyt/lyt_pane.cpp:
+	.text       start:0x80088BD0 end:0x80089D20
+	.ctors      start:0x801DD038 end:0x801DD03C
+	.rodata     start:0x801E87C0 end:0x801E87E0
+	.data       start:0x8020C200 end:0x8020C268
+	.bss        start:0x802475F8 end:0x80247600
+
+Revolution/HBM/nw4hbm/lyt/lyt_picture.cpp:
+	.text       start:0x80089D20 end:0x8008A280
+	.ctors      start:0x801DD03C end:0x801DD040
+	.rodata     start:0x801E87E0 end:0x801E87E8
+	.data       start:0x8020C268 end:0x8020C308
+	.bss        start:0x80247600 end:0x80247608
+
+Revolution/HBM/nw4hbm/lyt/lyt_resourceAccessor.cpp:
+	.text       start:0x8008A280 end:0x8008A2E0
+	.data       start:0x8020C308 end:0x8020C320
+
+Revolution/HBM/nw4hbm/lyt/lyt_textBox.cpp:
+	.text       start:0x8008A2E0 end:0x8008B730
+	.ctors      start:0x801DD040 end:0x801DD044
+	.rodata     start:0x801E87E8 end:0x801E8800
+	.data       start:0x8020C320 end:0x8020C3D0
+	.bss        start:0x80247608 end:0x80247610
+
+Revolution/HBM/nw4hbm/lyt/lyt_window.cpp:
+	.text       start:0x8008B730 end:0x8008DD60
+	.ctors      start:0x801DD044 end:0x801DD048
+	.rodata     start:0x801E8800 end:0x801E8818
+	.data       start:0x8020C3D0 end:0x8020C4B8
+	.bss        start:0x80247610 end:0x80247618
+
+Revolution/HBM/nw4hbm/math/math_triangular.cpp:
+	.text       start:0x8008DD60 end:0x8008E010
+	.rodata     start:0x801E8818 end:0x801E8840
+	.data       start:0x8020C4B8 end:0x8020D5D0
+
+Revolution/HBM/nw4hbm/ut/ut_binaryFileFormat.cpp:
+	.text       start:0x8008E010 end:0x8008E090
+
+Revolution/HBM/nw4hbm/ut/ut_CharStrmReader.cpp:
+	.text       start:0x8008E090 end:0x8008E1B0
+
+Revolution/HBM/nw4hbm/ut/ut_CharWriter.cpp:
+	.text       start:0x8008E1B0 end:0x8008FBB0
+	.rodata     start:0x801E8840 end:0x801E8860
+	.bss        start:0x80247618 end:0x80247630
+
+Revolution/HBM/nw4hbm/ut/ut_Font.cpp:
+	.text       start:0x8008FBB0 end:0x8008FC60
+	.data       start:0x8020D5D0 end:0x8020D600
+
+Revolution/HBM/nw4hbm/ut/ut_LinkList.cpp:
+	.text       start:0x8008FC60 end:0x8008FD70
+
+Revolution/HBM/nw4hbm/ut/ut_list.cpp:
+	.text       start:0x8008FD70 end:0x8008FEE0
+
+Revolution/HBM/nw4hbm/ut/ut_ResFont.cpp:
+	.text       start:0x8008FEE0 end:0x800901E0
+	.data       start:0x8020D600 end:0x8020D6E0
+
+Revolution/HBM/nw4hbm/ut/ut_ResFontBase.cpp:
+	.text       start:0x800901E0 end:0x80090830
+	.data       start:0x8020D6E0 end:0x8020D7A0
+
+Revolution/HBM/nw4hbm/ut/ut_TagProcessorBase.cpp:
+	.text       start:0x80090830 end:0x800912F0
+	.rodata     start:0x801E8860 end:0x801E8868
+	.data       start:0x8020D7A0 end:0x8020D828
+
+Revolution/HBM/nw4hbm/ut/ut_TextWriterBase.cpp:
+	.text       start:0x800912F0 end:0x80096760
+	.ctors      start:0x801DD048 end:0x801DD04C
+	.rodata     start:0x801E8868 end:0x801E8880
+	.data       start:0x8020D828 end:0x8020D830
+	.bss        start:0x80247630 end:0x80247660
+
+Revolution/HBM/mix.cpp:
+	.text       start:0x80096760 end:0x800980D0
+	.data       start:0x8020D830 end:0x8020E3C0
+	.bss        start:0x80247660 end:0x80247D20
+
+Revolution/HBM/syn.cpp:
+	.text       start:0x800980D0 end:0x80098570
+	.bss        start:0x80247D20 end:0x802481F0
+
+Revolution/HBM/synctrl.cpp:
+	.text       start:0x80098570 end:0x80098A10
+	.data       start:0x8020E3C0 end:0x8020E5C0
+
+Revolution/HBM/synenv.cpp:
+	.text       start:0x80098A10 end:0x80098DF0
+	.rodata     start:0x801E8880 end:0x801E88A0
+
+Revolution/HBM/synmix.cpp:
+	.text       start:0x80098DF0 end:0x80098F30
+	.data       start:0x8020E5C0 end:0x8020E950
+
+Revolution/HBM/synpitch.cpp:
+	.text       start:0x80098F30 end:0x800991B0
+	.rodata     start:0x801E88A0 end:0x801E88B8
+	.data       start:0x8020E950 end:0x8020ED40
+
+Revolution/HBM/synsample.cpp:
+	.text       start:0x800991B0 end:0x80099630
+
+Revolution/HBM/synvoice.cpp:
+	.text       start:0x80099630 end:0x800997E0
+
+Revolution/HBM/seq.cpp:
+	.text       start:0x800997E0 end:0x8009A110
+	.rodata     start:0x801E88B8 end:0x801E88E0
+	.data       start:0x8020ED40 end:0x8020EDC0
+	.bss        start:0x802481F0 end:0x802481F8
+
+RVLFaceLib/RFL_System.c:
+	extab       start:0x80006720 end:0x80006748
+	extabindex  start:0x80006BC0 end:0x80006BFC
+	.text       start:0x8009A110 end:0x8009ABC0
+	.rodata     start:0x801E88E0 end:0x801E88F0
+	.data       start:0x8020EDC0 end:0x8020EE18
+	.sdata      start:0x802F56A8 end:0x802F56B0
+	.sbss       start:0x802F5F00 end:0x802F5F10
+
+RVLFaceLib/RFL_NANDLoader.c:
+	extab       start:0x80006748 end:0x800067C8
+	extabindex  start:0x80006BFC end:0x80006CBC
+	.text       start:0x8009ABC0 end:0x8009BC60
+	.rodata     start:0x801E88F0 end:0x801E8980
+	.data       start:0x8020EE18 end:0x8020EE38
+	.sdata      start:0x802F56B0 end:0x802F56B8
+
+RVLFaceLib/RFL_NANDAccess.c:
+	extab       start:0x800067C8 end:0x80006840
+	extabindex  start:0x80006CBC end:0x80006D70
+	.text       start:0x8009BC60 end:0x8009D4A0
+	.data       start:0x8020EE38 end:0x8020EEC0
+	.sdata      start:0x802F56B8 end:0x802F56C0
+	.sdata2     start:0x802F6CE8 end:0x802F6CF0
+	.sbss2      start:0x802F87E8 end:0x802F87F0
+
+RVLFaceLib/RFL_Model.c:
+	extab       start:0x80006840 end:0x800068C8
+	extabindex  start:0x80006D70 end:0x80006E3C
+	.text       start:0x8009D4A0 end:0x8009F8A0
+	.rodata     start:0x801E8980 end:0x801E8A90
+	.sdata2     start:0x802F6CF0 end:0x802F6D30
+
+RVLFaceLib/RFL_MakeTex.c:
+	extab       start:0x800068C8 end:0x80006908
+	extabindex  start:0x80006E3C end:0x80006E9C
+	.text       start:0x8009F8A0 end:0x800A2040
+	.rodata     start:0x801E8A90 end:0x801E8B50
+	.sdata2     start:0x802F6D30 end:0x802F6DF0
+
+RVLFaceLib/RFL_Icon.c:
+	extab       start:0x80006908 end:0x80006920
+	extabindex  start:0x80006E9C end:0x80006EC0
+	.text       start:0x800A2040 end:0x800A25B0
+	.rodata     start:0x801E8B50 end:0x801E8B90
+	.sdata2     start:0x802F6DF0 end:0x802F6E30
+
+RVLFaceLib/RFL_HiddenDatabase.c:
+	extab       start:0x80006920 end:0x80006928
+	extabindex  start:0x80006EC0 end:0x80006ECC
+	.text       start:0x800A25B0 end:0x800A25F0
+
+RVLFaceLib/RFL_Database.c:
+	extab       start:0x80006928 end:0x800069A0
+	extabindex  start:0x80006ECC end:0x80006F80
+	.text       start:0x800A25F0 end:0x800A3510
+
+RVLFaceLib/RFL_Controller.c:
+	extab       start:0x800069A0 end:0x800069B0
+	extabindex  start:0x80006F80 end:0x80006F98
+	.text       start:0x800A3510 end:0x800A37B0
+
+RVLFaceLib/RFL_MiddleDatabase.c:
+	extab       start:0x800069B0 end:0x800069C8
+	extabindex  start:0x80006F98 end:0x80006FBC
+	.text       start:0x800A37B0 end:0x800A3AC0
+
+RVLFaceLib/RFL_DefaultDatabase.c:
+	.text       start:0x800A3AC0 end:0x800A3AE0
+	.rodata     start:0x801E8B90 end:0x801E8D50
+
+RVLFaceLib/RFL_DataUtility.c:
+	extab       start:0x800069C8 end:0x800069F0
+	extabindex  start:0x80006FBC end:0x80006FF8
+	.text       start:0x800A3AE0 end:0x800A4360
+	.rodata     start:0x801E8D50 end:0x801E8D60
+
+RVLFaceLib/RFL_Format.c:
+	extab       start:0x800069F0 end:0x800069F8
+	extabindex  start:0x80006FF8 end:0x80007004
+	.text       start:0x800A4360 end:0x800A4420
+
+NW4R/ef/ef_draworder.cpp:
+	.text       start:0x800A4F80 end:0x800A50A0
+	.data       start:0x8020EEF8 end:0x8020EF10
+
+NW4R/ef/ef_effect.cpp:
+	.text       start:0x800A50A0 end:0x800A5E50
+	.data       start:0x8020EF10 end:0x8020EF30
+	.sdata2     start:0x802F6E38 end:0x802F6E40
+
+NW4R/ef/ef_effectsystem.cpp:
+	.text       start:0x800A5E50 end:0x800A69B0
+	.ctors      start:0x801DD050 end:0x801DD054
+	.data       start:0x8020EF30 end:0x8020EF78
+	.bss        start:0x80248658 end:0x80254770
+	.sdata      start:0x802F56C8 end:0x802F56D0
+	.sbss       start:0x802F5F40 end:0x802F5F50
+	.sdata2     start:0x802F6E40 end:0x802F6E48
+
+NW4R/ef/ef_emitter.cpp:
+	.text       start:0x800A69B0 end:0x800A8CB0
+	.data       start:0x8020EF78 end:0x8020EFA0
+	.sdata2     start:0x802F6E48 end:0x802F6E80
+
+NW4R/ef/ef_animcurve.cpp:
+	.text       start:0x800A8CB0 end:0x800ADBC0
+	.data       start:0x8020EFA0 end:0x8020F1A0
+	.sdata2     start:0x802F6E80 end:0x802F6EB8
+
+NW4R/ef/ef_postfield.cpp:
+	.text       start:0x800ADBC0 end:0x800B1250
+	.sdata2     start:0x802F6EB8 end:0x802F6EF0
+
+NW4R/ef/ef_particle.cpp:
+	.text       start:0x800B1250 end:0x800B2050
+	.data       start:0x8020F1A0 end:0x8020F1B8
+	.sdata2     start:0x802F6EF0 end:0x802F6F40
+
+NW4R/ef/ef_particlemanager.cpp:
+	.text       start:0x800B2050 end:0x800B4380
+	.ctors      start:0x801DD054 end:0x801DD058
+	.data       start:0x8020F1B8 end:0x8020F200
+	.bss        start:0x80254770 end:0x802547A0
+	.sbss       start:0x802F5F50 end:0x802F5F58
+	.sdata2     start:0x802F6F40 end:0x802F6F88
+
+NW4R/ef/ef_resource.cpp:
+	.text       start:0x800B4380 end:0x800B5010
+	.ctors      start:0x801DD058 end:0x801DD05C
+	.bss        start:0x802547A0 end:0x802547C0
+
+NW4R/ef/ef_util.cpp:
+	.text       start:0x800B5010 end:0x800B5F90
+	.sdata      start:0x802F56D0 end:0x802F56E0
+	.sdata2     start:0x802F6F88 end:0x802F6FC8
+
+NW4R/ef/ef_handle.cpp:
+	.text       start:0x800B5F90 end:0x800B6010
+
+NW4R/ef/ef_emitterform.cpp:
+	.text       start:0x800B6010 end:0x800B65B0
+	.sdata2     start:0x802F6FC8 end:0x802F6FF8
+
+NW4R/ef/ef_creationqueue.cpp:
+	.text       start:0x800B65B0 end:0x800B6A00
+
+NW4R/ef/ef_emform.cpp:
+	.text       start:0x800B6A00 end:0x800B6AE0
+	.ctors      start:0x801DD05C end:0x801DD060
+	.data       start:0x8020F200 end:0x8020F210
+	.sbss       start:0x802F5F58 end:0x802F5F78
+
+NW4R/ef/ef_point.cpp:
+	.text       start:0x800B6AE0 end:0x800B6E30
+	.data       start:0x8020F210 end:0x8020F220
+	.sdata2     start:0x802F6FF8 end:0x802F7028
+
+NW4R/ef/ef_line.cpp:
+	.text       start:0x800B6E30 end:0x800B7170
+	.data       start:0x8020F220 end:0x8020F230
+	.sdata2     start:0x802F7028 end:0x802F7050
+
+NW4R/ef/ef_disc.cpp:
+	.text       start:0x800B7170 end:0x800B76B0
+	.data       start:0x8020F230 end:0x8020F240
+	.sdata2     start:0x802F7050 end:0x802F7098
+
+NW4R/ef/ef_sphere.cpp:
+	.text       start:0x800B76B0 end:0x800B7F10
+	.data       start:0x8020F240 end:0x8020F250
+	.sdata2     start:0x802F7098 end:0x802F70E8
+
+NW4R/ef/ef_cylinder.cpp:
+	.text       start:0x800B7F10 end:0x800B86C0
+	.data       start:0x8020F250 end:0x8020F260
+	.sdata2     start:0x802F70E8 end:0x802F7130
+
+NW4R/ef/ef_torus.cpp:
+	.text       start:0x800B86C0 end:0x800B8D00
+	.data       start:0x8020F260 end:0x8020F270
+	.sdata2     start:0x802F7130 end:0x802F7178
+
+NW4R/ef/ef_cube.cpp:
+	.text       start:0x800B8D00 end:0x800BA8E0
+	.data       start:0x8020F270 end:0x8020F280
+	.sdata2     start:0x802F7178 end:0x802F71B0
+
+NW4R/ef/ef_drawstrategybuilder.cpp:
+	.text       start:0x800BA8E0 end:0x800BAA80
+	.data       start:0x8020F280 end:0x8020F290
+	.bss        start:0x802547C0 end:0x80254DE0
+	.sbss       start:0x802F5F78 end:0x802F5F80
+
+NW4R/ef/ef_drawstrategyimpl.cpp:
+	.text       start:0x800BAA80 end:0x800BCAB0
+	.ctors      start:0x801DD060 end:0x801DD064
+	.data       start:0x8020F290 end:0x8020F2A8
+	.bss        start:0x80254DE0 end:0x80254E40
+	.sdata2     start:0x802F71B0 end:0x802F71E0
+
+NW4R/ef/ef_drawbillboardstrategy.cpp:
+	.text       start:0x800BCAB0 end:0x800BEC50
+	.data       start:0x8020F2A8 end:0x8020F2C8
+	.sdata      start:0x802F56E0 end:0x802F5700
+	.sdata2     start:0x802F71E0 end:0x802F7210
+
+NW4R/ef/ef_drawdirectionalstrategy.cpp:
+	.text       start:0x800BEC50 end:0x800C1040
+	.rodata     start:0x801E8D60 end:0x801E8DC0
+	.data       start:0x8020F2C8 end:0x8020F2E8
+	.sdata      start:0x802F5700 end:0x802F5720
+	.sdata2     start:0x802F7210 end:0x802F7238
+
+NW4R/ef/ef_drawfreestrategy.cpp:
+	.text       start:0x800C1040 end:0x800C1A70
+	.rodata     start:0x801E8DC0 end:0x801E8E20
+	.data       start:0x8020F2E8 end:0x8020F300
+	.sdata      start:0x802F5720 end:0x802F5728
+	.sdata2     start:0x802F7238 end:0x802F7260
+
+NW4R/ef/ef_drawlinestrategy.cpp:
+	.text       start:0x800C1A70 end:0x800C20A0
+	.data       start:0x8020F300 end:0x8020F318
+	.sdata      start:0x802F5728 end:0x802F5730
+	.sdata2     start:0x802F7260 end:0x802F7270
+
+NW4R/ef/ef_drawpointstrategy.cpp:
+	.text       start:0x800C20A0 end:0x800C2540
+	.data       start:0x8020F318 end:0x8020F330
+	.sdata      start:0x802F5730 end:0x802F5738
+	.sdata2     start:0x802F7270 end:0x802F7280
+
+NW4R/ef/ef_drawstripestrategy.cpp:
+	.text       start:0x800C2540 end:0x800C5C40
+	.data       start:0x8020F330 end:0x8020F350
+	.sdata2     start:0x802F7280 end:0x802F72B8
+
+NW4R/ef/ef_drawsmoothstripestrategy.cpp:
+	.text       start:0x800C5C40 end:0x800CAC60
+	.data       start:0x8020F350 end:0x8020F380
+	.bss        start:0x80254E40 end:0x80254E80
+	.sbss       start:0x802F5F80 end:0x802F5F88
+	.sdata2     start:0x802F72B8 end:0x802F72F0
+
+NW4R/ef/ef_res_emitter_ac.cpp:
+	.text       start:0x800CAC60 end:0x800CAC90
+
+NW4R/ef/ef_res_emitterparam_ac.cpp:
+	.text       start:0x800CAC90 end:0x800CACB0
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C7944 end:0x801C79A4
 	.sbss       start:0x802F6868 end:0x802F6870
