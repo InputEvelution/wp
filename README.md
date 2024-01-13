@@ -52,7 +52,7 @@ Building
 
 - Clone the repository:
   ```
-  git clone https://github.com/zeldaret/tww.git
+  git clone https://github.com/InputEvelution/wp.git
   ```
 - Using [Dolphin Emulator](https://dolphin-emu.org/), extract your game to `orig/SUPP01` (or `SUPJ01-R0` for JPN r0, `SUPE01` for USA, etc.).  
 ![](assets/dolphin-extract.png)
