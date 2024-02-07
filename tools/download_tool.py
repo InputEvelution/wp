@@ -23,6 +23,10 @@ import zipfile
 from pathlib import Path
 
 
+def compilers_url(tag):
+    return f"https://files.decomp.dev/compilers_{tag}.zip"
+
+
 def dtk_url(tag):
     uname = platform.uname()
     suffix = ""
@@ -49,18 +53,11 @@ def wibo_url(tag):
     return f"{repo}/releases/download/{tag}/wibo"
 
 
-def compilers_url(tag):
-    if tag == "1":
-        return "https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip"
-    else:
-        sys.exit("Unknown compilers tag %s" % tag)
-
-
 TOOLS = {
+    "compilers": compilers_url,
     "dtk": dtk_url,
     "sjiswrap": sjiswrap_url,
     "wibo": wibo_url,
-    "compilers": compilers_url,
 }
 
 

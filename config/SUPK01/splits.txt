@@ -18,6 +18,11 @@ wp/frand.c:
 	.sbss       start:0x802337F8 end:0x80233800
 	.sdata2     start:0x802345C8 end:0x802345D8
 
+Revolution/HBM/HBMFrameController.cpp:
+	.text       start:0x80076190 end:0x80076340
+	.rodata     start:0x801E97F8 end:0x801E9800
+	.data       start:0x8020BFA0 end:0x8020BFC8
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C7FC4 end:0x801C8024
 	.sbss       start:0x802341F8 end:0x80234200

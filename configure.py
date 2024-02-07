@@ -121,8 +121,8 @@ if not is_windows():
     config.wrapper = args.wrapper
 
 # Tool versions
-config.compilers_tag = "1"
-config.dtk_tag = "v0.5.7"
+config.compilers_tag = "20231018"
+config.dtk_tag = "v0.7.1"
 config.sjiswrap_tag = "v1.1.1"
 config.wibo_tag = "0.5.1"
 
@@ -191,7 +191,7 @@ config.linker_version = "Wii/1.3"
 def RevolutionLib(lib_name, objects):
     return {
         "lib": lib_name,
-        "mw_version": "Wii/1.1",
+        "mw_version": "Wii/1.0",
         "cflags": cflags_base,
         "host": False,
         "objects": objects,
@@ -237,7 +237,7 @@ config.libs = [
     },
     {
         "lib": "homebuttonLib",
-        "mw_version": "Wii/1.1",
+        "mw_version": "Wii/1.0",
         "cflags": cflags_rel,
         "host": False,
         "objects": [
@@ -286,7 +286,7 @@ config.libs = [
     },
     {
         "lib": "RVLFaceLib",
-        "mw_version": "Wii/1.1",
+        "mw_version": "Wii/1.0",
         "cflags": cflags_base,
         "host": False,
         "objects": [
@@ -345,7 +345,7 @@ config.libs = [
     ),
 	{
         "lib": "Runtime.PPCEABI.H",
-        "mw_version": config.linker_version,
+        "mw_version": "Wii/1.0RC1",
         "cflags": cflags_runtime,
         "host": False,
         "objects": [
