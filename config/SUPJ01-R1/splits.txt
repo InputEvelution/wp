@@ -216,6 +216,15 @@ Revolution/HBM/seq.cpp:
 	.data       start:0x8020CE90 end:0x8020CF10
 	.bss        start:0x80246370 end:0x80246378
 
+RVLFaceLib/RFL_System.c:
+	extab       start:0x80006720 end:0x80006748
+	extabindex  start:0x80006BC0 end:0x80006BFC
+	.text       start:0x80099A90 end:0x8009A540
+	.rodata     start:0x801E6998 end:0x801E69A8
+	.data       start:0x8020CF10 end:0x8020CF68
+	.sdata      start:0x802F3770 end:0x802F3778
+	.sbss       start:0x802F3FC0 end:0x802F3FD0
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C7414 end:0x801C7474
 	.sbss       start:0x802F4928 end:0x802F4930
