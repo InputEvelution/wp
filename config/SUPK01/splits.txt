@@ -1,17 +1,17 @@
 Sections:
-	.init       type:code
-	extab       type:rodata
-	extabindex  type:rodata
-	.text       type:code
-	.ctors      type:rodata
-	.dtors      type:rodata
-	.rodata     type:rodata
-	.data       type:data
-	.sdata      type:data
-	.sbss       type:bss
-	.sdata2     type:rodata
-	.sbss2      type:bss
-	.bss        type:bss
+	.init       type:code align:4
+	extab       type:rodata align:8
+	extabindex  type:rodata align:8
+	.text       type:code align:16
+	.ctors      type:rodata align:16
+	.dtors      type:rodata align:16
+	.rodata     type:rodata align:32
+	.data       type:data align:4
+	.sdata      type:data align:4
+	.sbss       type:bss align:32
+	.sdata2     type:rodata align:32
+	.sbss2      type:bss align:8
+	.bss        type:bss align:128
 
 wp/frand.c:
 	.text       start:0x8006B410 end:0x8006B640
@@ -22,6 +22,199 @@ Revolution/HBM/HBMFrameController.cpp:
 	.text       start:0x80076190 end:0x80076340
 	.rodata     start:0x801E97F8 end:0x801E9800
 	.data       start:0x8020BFA0 end:0x8020BFC8
+
+Revolution/HBM/HBMAnmController.cpp:
+	.text       start:0x80076340 end:0x80076450
+	.data       start:0x8020BFC8 end:0x8020C010
+
+Revolution/HBM/HBMGUIManager.cpp:
+	.text       start:0x80076450 end:0x80077C70
+	.rodata     start:0x801E9800 end:0x801E9810
+	.data       start:0x8020C010 end:0x8020C280
+	.bss        start:0x8024BBF8 end:0x8024BC00
+
+Revolution/HBM/HBMController.cpp:
+	.text       start:0x80077C70 end:0x800788B0
+	.rodata     start:0x801E9810 end:0x801E9820
+	.bss        start:0x8024BC00 end:0x8024BDA0
+
+Revolution/HBM/HBMRemoteSpk.cpp:
+	.text       start:0x800788B0 end:0x800791D0
+	.data       start:0x8020C280 end:0x8020C2B0
+	.bss        start:0x8024BDA0 end:0x8024BDA8
+
+Revolution/HBM/HBMAxSound.cpp:
+	.text       start:0x800791D0 end:0x80079D00
+	.rodata     start:0x801E9820 end:0x801E9858
+	.data       start:0x8020C2B0 end:0x8020C600
+	.bss        start:0x8024BDA8 end:0x8024BDB0
+
+Revolution/HBM/HBMCommon.cpp:
+	.text       start:0x80079D00 end:0x8007A090
+	.data       start:0x8020C600 end:0x8020C650
+	.bss        start:0x8024BDB0 end:0x8024BDC0
+
+Revolution/HBM/HBMBase.cpp:
+	.text       start:0x8007A090 end:0x80082990
+	.rodata     start:0x801E9858 end:0x801E9BD8
+	.data       start:0x8020C650 end:0x8020D368
+	.bss        start:0x8024BDC0 end:0x8024BE40
+
+Revolution/HBM/nw4hbm/lyt/lyt_animation.cpp:
+	.text       start:0x80082990 end:0x80083540
+	.rodata     start:0x801E9BD8 end:0x801E9BF8
+	.data       start:0x8020D368 end:0x8020D3E8
+
+Revolution/HBM/nw4hbm/lyt/lyt_arcResourceAccessor.cpp:
+	.text       start:0x80083540 end:0x800838E0
+	.data       start:0x8020D3E8 end:0x8020D468
+
+Revolution/HBM/nw4hbm/lyt/lyt_bounding.cpp:
+	.text       start:0x800838E0 end:0x80083A60
+	.ctors      start:0x801DD6B4 end:0x801DD6B8
+	.data       start:0x8020D468 end:0x8020D550
+	.bss        start:0x8024BE40 end:0x8024BE48
+
+Revolution/HBM/nw4hbm/lyt/lyt_common.cpp:
+	.text       start:0x80083A60 end:0x800848E0
+	.rodata     start:0x801E9BF8 end:0x801E9C08
+	.bss        start:0x8024BE48 end:0x8024BE70
+
+Revolution/HBM/nw4hbm/lyt/lyt_drawInfo.cpp:
+	.text       start:0x800848E0 end:0x800849A0
+	.rodata     start:0x801E9C08 end:0x801E9C10
+	.data       start:0x8020D550 end:0x8020D580
+
+Revolution/HBM/nw4hbm/lyt/lyt_group.cpp:
+	.text       start:0x800849A0 end:0x80084CF0
+	.data       start:0x8020D580 end:0x8020D5A8
+
+Revolution/HBM/nw4hbm/lyt/lyt_layout.cpp:
+	.text       start:0x80084CF0 end:0x80085990
+	.rodata     start:0x801E9C10 end:0x801E9C18
+	.data       start:0x8020D5A8 end:0x8020D5F8
+	.bss        start:0x8024BE70 end:0x8024BE78
+
+Revolution/HBM/nw4hbm/lyt/lyt_material.cpp:
+	.text       start:0x80085990 end:0x80088C00
+	.rodata     start:0x801E9C18 end:0x801E9C48
+	.data       start:0x8020D5F8 end:0x8020D680
+
+Revolution/HBM/nw4hbm/lyt/lyt_pane.cpp:
+	.text       start:0x80088C00 end:0x80089D50
+	.ctors      start:0x801DD6B8 end:0x801DD6BC
+	.rodata     start:0x801E9C48 end:0x801E9C68
+	.data       start:0x8020D680 end:0x8020D6E8
+	.bss        start:0x8024BE78 end:0x8024BE80
+
+Revolution/HBM/nw4hbm/lyt/lyt_picture.cpp:
+	.text       start:0x80089D50 end:0x8008A2B0
+	.ctors      start:0x801DD6BC end:0x801DD6C0
+	.rodata     start:0x801E9C68 end:0x801E9C70
+	.data       start:0x8020D6E8 end:0x8020D788
+	.bss        start:0x8024BE80 end:0x8024BE88
+
+Revolution/HBM/nw4hbm/lyt/lyt_resourceAccessor.cpp:
+	.text       start:0x8008A2B0 end:0x8008A310
+	.data       start:0x8020D788 end:0x8020D7A0
+
+Revolution/HBM/nw4hbm/lyt/lyt_textBox.cpp:
+	.text       start:0x8008A310 end:0x8008B760
+	.ctors      start:0x801DD6C0 end:0x801DD6C4
+	.rodata     start:0x801E9C70 end:0x801E9C88
+	.data       start:0x8020D7A0 end:0x8020D850
+	.bss        start:0x8024BE88 end:0x8024BE90
+
+Revolution/HBM/nw4hbm/lyt/lyt_window.cpp:
+	.text       start:0x8008B760 end:0x8008DD90
+	.ctors      start:0x801DD6C4 end:0x801DD6C8
+	.rodata     start:0x801E9C88 end:0x801E9CA0
+	.data       start:0x8020D850 end:0x8020D938
+	.bss        start:0x8024BE90 end:0x8024BE98
+
+Revolution/HBM/nw4hbm/math/math_triangular.cpp:
+	.text       start:0x8008DD90 end:0x8008E040
+	.rodata     start:0x801E9CA0 end:0x801E9CC8
+	.data       start:0x8020D938 end:0x8020EA50
+
+Revolution/HBM/nw4hbm/ut/ut_binaryFileFormat.cpp:
+	.text       start:0x8008E040 end:0x8008E0C0
+
+Revolution/HBM/nw4hbm/ut/ut_CharStrmReader.cpp:
+	.text       start:0x8008E0C0 end:0x8008E1E0
+
+Revolution/HBM/nw4hbm/ut/ut_CharWriter.cpp:
+	.text       start:0x8008E1E0 end:0x8008FBE0
+	.rodata     start:0x801E9CC8 end:0x801E9CE8
+	.bss        start:0x8024BE98 end:0x8024BEB0
+
+Revolution/HBM/nw4hbm/ut/ut_Font.cpp:
+	.text       start:0x8008FBE0 end:0x8008FC90
+	.data       start:0x8020EA50 end:0x8020EA80
+
+Revolution/HBM/nw4hbm/ut/ut_LinkList.cpp:
+	.text       start:0x8008FC90 end:0x8008FDA0
+
+Revolution/HBM/nw4hbm/ut/ut_list.cpp:
+	.text       start:0x8008FDA0 end:0x8008FF10
+
+Revolution/HBM/nw4hbm/ut/ut_ResFont.cpp:
+	.text       start:0x8008FF10 end:0x80090210
+	.data       start:0x8020EA80 end:0x8020EB60
+
+Revolution/HBM/nw4hbm/ut/ut_ResFontBase.cpp:
+	.text       start:0x80090210 end:0x80090860
+	.data       start:0x8020EB60 end:0x8020EC20
+
+Revolution/HBM/nw4hbm/ut/ut_TagProcessorBase.cpp:
+	.text       start:0x80090860 end:0x80091320
+	.rodata     start:0x801E9CE8 end:0x801E9CF0
+	.data       start:0x8020EC20 end:0x8020ECA8
+
+Revolution/HBM/nw4hbm/ut/ut_TextWriterBase.cpp:
+	.text       start:0x80091320 end:0x80096790
+	.ctors      start:0x801DD6C8 end:0x801DD6CC
+	.rodata     start:0x801E9CF0 end:0x801E9D08
+	.data       start:0x8020ECA8 end:0x8020ECB0
+	.bss        start:0x8024BEB0 end:0x8024BEE0
+
+Revolution/HBM/mix.cpp:
+	.text       start:0x80096790 end:0x80098100
+	.data       start:0x8020ECB0 end:0x8020F840
+	.bss        start:0x8024BEE0 end:0x8024C5A0
+
+Revolution/HBM/syn.cpp:
+	.text       start:0x80098100 end:0x800985A0
+	.bss        start:0x8024C5A0 end:0x8024CA70
+
+Revolution/HBM/synctrl.cpp:
+	.text       start:0x800985A0 end:0x80098A40
+	.data       start:0x8020F840 end:0x8020FA40
+
+Revolution/HBM/synenv.cpp:
+	.text       start:0x80098A40 end:0x80098E20
+	.rodata     start:0x801E9D08 end:0x801E9D28
+
+Revolution/HBM/synmix.cpp:
+	.text       start:0x80098E20 end:0x80098F60
+	.data       start:0x8020FA40 end:0x8020FDD0
+
+Revolution/HBM/synpitch.cpp:
+	.text       start:0x80098F60 end:0x800991E0
+	.rodata     start:0x801E9D28 end:0x801E9D40
+	.data       start:0x8020FDD0 end:0x802101C0
+
+Revolution/HBM/synsample.cpp:
+	.text       start:0x800991E0 end:0x80099660
+
+Revolution/HBM/synvoice.cpp:
+	.text       start:0x80099660 end:0x80099810
+
+Revolution/HBM/seq.cpp:
+	.text       start:0x80099810 end:0x8009A140
+	.rodata     start:0x801E9D40 end:0x801E9D68
+	.data       start:0x802101C0 end:0x80210240
+	.bss        start:0x8024CA70 end:0x8024CA78
 
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C7FC4 end:0x801C8024
