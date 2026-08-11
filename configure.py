@@ -368,6 +368,20 @@ config.libs = [
             ),
         ],
     },
+    Rel(
+        "menu",
+        [
+            Object(NonMatching, "REL/menu/menu_1.cpp"),
+            Object(NonMatching, "REL/menu/menu_2.cpp"),
+            Object(NonMatching, "REL/menu/menu_3.cpp"),
+            Object(NonMatching, "REL/menu/menu_4.cpp"),
+            Object(NonMatching, "REL/menu/menu_5.cpp"),
+            Object(NonMatching, "REL/menu/menu_6.cpp"),
+            Object(NonMatching, "REL/menu/menu_7.cpp"),
+            Object(NonMatching, "REL/menu/menu_8.cpp"),
+            Object(NonMatching, "REL/menu/menu_9.cpp"),
+        ],
+    ),
 ]
 
 if args.mode == "configure":

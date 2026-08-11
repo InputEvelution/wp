@@ -11,6 +11,8 @@ All versions of the game are supported (with PAL as the default):
 - `SUPE01`: Rev 0 (USA)
 - `SUPK01`: Rev 0 (KOR)
 
+Contributors may not use or reference source code leaks from other Nintendo, NDCube or HudsonSoft games. This also extends to the usage of AI and LLMs, as they may have information from those leaks in their training. This is designed to be a clean room project written by real people.
+
 Dependencies
 ============
 

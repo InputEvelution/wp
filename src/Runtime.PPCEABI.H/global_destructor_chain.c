@@ -21,6 +21,4 @@ void __destroy_global_chain(void) {
   } 
 }
 
-#pragma section ".dtors$10"
-__declspec(section ".dtors$10") __declspec(weak) 
-	extern void * const __destroy_global_chain_reference = __destroy_global_chain;
+__declspec(section ".dtors") __declspec(weak) static void* const __destroy_global_chain_reference = __destroy_global_chain;

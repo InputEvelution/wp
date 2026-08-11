@@ -1,7 +1,64 @@
 Sections:
-	.text       type:code align:32
+	.text       type:code align:16
 	.ctors      type:rodata align:32
 	.dtors      type:rodata align:32
 	.rodata     type:rodata align:32
 	.data       type:data align:32
 	.bss        type:bss align:32
+
+REL/global_destructor_chain.c:
+	.text       start:0x00000000 end:0x00000080 align:16
+	.dtors      start:0x00000000 end:0x00000004
+	.bss        start:0x00000000 end:0x00000008
+
+REL/menu/menu_1.cpp:
+	.text       start:0x00000080 end:0x00000490 align:16
+	.rodata     start:0x00000000 end:0x00000008
+	.data       start:0x00000000 end:0x00000078
+	.bss        start:0x00000008 end:0x00000010
+
+REL/menu/menu_2.cpp:
+	.text       start:0x00000490 end:0x00004EF0 align:16
+	.rodata     start:0x00000008 end:0x00000018
+	.data       start:0x00000078 end:0x000001A0
+	.bss        start:0x00000010 end:0x00000028
+
+REL/menu/menu_3.cpp:
+	.text       start:0x00004EF0 end:0x00006FA0 align:16
+	.ctors      start:0x00000000 end:0x00000004
+	.rodata     start:0x00000018 end:0x00000678
+	.data       start:0x000001A0 end:0x00000598
+	.bss        start:0x00000028 end:0x00000060
+
+REL/menu/menu_4.cpp:
+	.text       start:0x00006FA0 end:0x0000A850 align:16
+	.ctors      start:0x00000004 end:0x00000008
+	.data       start:0x00000598 end:0x00000710
+	.bss        start:0x00000060 end:0x00000078
+
+REL/menu/menu_5.cpp:
+	.text       start:0x0000A850 end:0x0000CFC0 align:16
+	.rodata     start:0x00000678 end:0x00000738
+	.data       start:0x00000710 end:0x00000B40
+	.bss        start:0x00000078 end:0x00000088
+
+REL/menu/menu_6.cpp:
+	.text       start:0x0000CFC0 end:0x0000EDB0 align:16
+	.rodata     start:0x00000738 end:0x00000758
+	.data       start:0x00000B40 end:0x00000D20
+
+REL/menu/menu_7.cpp:
+	.text       start:0x0000EDB0 end:0x0000F630 align:16
+	.rodata     start:0x00000758 end:0x00000778
+	.data       start:0x00000D20 end:0x00000E10
+
+REL/menu/menu_8.cpp:
+	.text       start:0x0000F630 end:0x0000FDB0 align:16
+	.rodata     start:0x00000778 end:0x00000788
+	.data       start:0x00000E10 end:0x00000F68
+
+REL/menu/menu_9.cpp:
+	.text       start:0x0000FDB0 end:0x000115C0 align:16
+	.rodata     start:0x00000788 end:0x00000850
+	.data       start:0x00000F68 end:0x00001670
+	.bss        start:0x00000088 end:0x00000090
