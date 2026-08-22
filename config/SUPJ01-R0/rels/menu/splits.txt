@@ -5,3 +5,250 @@ Sections:
 	.rodata     type:rodata align:32
 	.data       type:data align:32
 	.bss        type:bss align:32
+
+REL/global_destructor_chain.c:
+	.text       start:0x00000000 end:0x00000080 align:16
+	.dtors      start:0x00000000 end:0x00000004
+	.bss        start:0x00000000 end:0x00000008
+
+REL/menu/menu_1.cpp:
+	.text       start:0x00000080 end:0x00000490 align:16
+	.rodata     start:0x00000000 end:0x00000008
+	.data       start:0x00000000 end:0x00000078
+	.bss        start:0x00000008 end:0x00000010
+
+REL/menu/menu_2.cpp:
+	.text       start:0x00000490 end:0x00004EF0 align:16
+	.rodata     start:0x00000008 end:0x00000018
+	.data       start:0x00000078 end:0x000001A0
+	.bss        start:0x00000010 end:0x00000028
+
+REL/menu/menu_3.cpp:
+	.text       start:0x00004EF0 end:0x00006FA0 align:16
+	.ctors      start:0x00000000 end:0x00000004
+	.rodata     start:0x00000018 end:0x00000678
+	.data       start:0x000001A0 end:0x00000598
+	.bss        start:0x00000028 end:0x00000060
+
+REL/menu/menu_4.cpp:
+	.text       start:0x00006FA0 end:0x0000A850 align:16
+	.ctors      start:0x00000004 end:0x00000008
+	.data       start:0x00000598 end:0x00000710
+	.bss        start:0x00000060 end:0x00000078
+
+REL/menu/menu_5.cpp:
+	.text       start:0x0000A850 end:0x0000CFC0 align:16
+	.rodata     start:0x00000678 end:0x00000738
+	.data       start:0x00000710 end:0x00000B40
+	.bss        start:0x00000078 end:0x00000088
+
+REL/menu/menu_6.cpp:
+	.text       start:0x0000CFC0 end:0x0000EDB0 align:16
+	.rodata     start:0x00000738 end:0x00000758
+	.data       start:0x00000B40 end:0x00000D20
+
+REL/menu/menu_7.cpp:
+	.text       start:0x0000EDB0 end:0x0000F630 align:16
+	.rodata     start:0x00000758 end:0x00000778
+	.data       start:0x00000D20 end:0x00000E10
+
+REL/menu/menu_8.cpp:
+	.text       start:0x0000F630 end:0x0000FDB0 align:16
+	.rodata     start:0x00000778 end:0x00000788
+	.data       start:0x00000E10 end:0x00000F68
+
+REL/menu/menu_9.cpp:
+	.text       start:0x0000FDB0 end:0x000115C0 align:16
+	.rodata     start:0x00000788 end:0x00000850
+	.data       start:0x00000F68 end:0x00001670
+	.bss        start:0x00000088 end:0x00000090
+
+REL/menu/menu_10.cpp:
+	.text       start:0x000115C0 end:0x000188C0 align:16
+	.rodata     start:0x00000850 end:0x00000CF0
+	.data       start:0x00001670 end:0x000037F0
+	.bss        start:0x00000090 end:0x00000098
+
+REL/menu/menu_11.cpp:
+	.text       start:0x000188C0 end:0x00020150 align:16
+	.rodata     start:0x00000CF0 end:0x00000DA0
+	.data       start:0x000037F0 end:0x00004188
+
+REL/menu/menu_12.cpp:
+	.text       start:0x00020150 end:0x000243F0 align:16
+	.ctors      start:0x00000008 end:0x0000000C
+	.rodata     start:0x00000DA0 end:0x00001320
+	.data       start:0x00004188 end:0x00005BB0
+	.bss        start:0x00000098 end:0x000000B0
+
+REL/menu/menu_13.cpp:
+	.text       start:0x000243F0 end:0x000252F0 align:16
+	.rodata     start:0x00001320 end:0x00001348
+	.data       start:0x00005BB0 end:0x00006090
+
+REL/menu/menu_14.cpp:
+	.text       start:0x000252F0 end:0x00026410 align:16
+	.rodata     start:0x00001348 end:0x000015E8
+	.data       start:0x00006090 end:0x000068C0
+	.bss        start:0x000000B0 end:0x000000B8
+
+REL/menu/menu_15.cpp:
+	.text       start:0x00026410 end:0x00028A50 align:16
+	.rodata     start:0x000015E8 end:0x00001768
+	.data       start:0x000068C0 end:0x000070F8
+
+REL/menu/menu_16.cpp:
+	.text       start:0x00028A50 end:0x00029F40 align:16
+	.rodata     start:0x00001768 end:0x00001780
+	.data       start:0x000070F8 end:0x000076E0
+
+REL/menu/menu_17.cpp:
+	.text       start:0x00029F40 end:0x0002B4E0 align:16
+	.rodata     start:0x00001780 end:0x00001848
+	.data       start:0x000076E0 end:0x00007DE8
+
+REL/menu/menu_18.cpp:
+	.text       start:0x0002B4E0 end:0x0002C4F0 align:16
+	.rodata     start:0x00001848 end:0x00001880
+	.data       start:0x00007DE8 end:0x000082E0
+
+REL/menu/menu_19.cpp:
+	.text       start:0x0002C4F0 end:0x0002D760 align:16
+	.rodata     start:0x00001880 end:0x00001970
+	.data       start:0x000082E0 end:0x000089C8
+
+REL/menu/menu_20.cpp:
+	.text       start:0x0002D760 end:0x00030D20 align:16
+	.rodata     start:0x00001970 end:0x00001D20
+	.data       start:0x000089C8 end:0x000097F8
+
+REL/menu/menu_21.cpp:
+	.text       start:0x00030D20 end:0x00031FF0 align:16
+	.rodata     start:0x00001D20 end:0x00001DE8
+	.data       start:0x000097F8 end:0x0000A130
+
+REL/menu/menu_22.cpp:
+	.text       start:0x00031FF0 end:0x00033CF0 align:16
+	.rodata     start:0x00001DE8 end:0x00001E48
+	.data       start:0x0000A130 end:0x0000A480
+
+REL/menu/menu_23.cpp:
+	.text       start:0x00033CF0 end:0x00034D40 align:16
+	.rodata     start:0x00001E48 end:0x00001E78
+	.data       start:0x0000A480 end:0x0000AB70
+
+REL/menu/menu_24.cpp:
+	.text       start:0x00034D40 end:0x00036010 align:16
+	.rodata     start:0x00001E78 end:0x00001EA0
+	.data       start:0x0000AB70 end:0x0000B078
+
+REL/menu/menu_25.cpp:
+	.text       start:0x00036010 end:0x00036D70 align:16
+	.rodata     start:0x00001EA0 end:0x00001EF0
+	.data       start:0x0000B078 end:0x0000B5D8
+
+REL/menu/menu_26.cpp:
+	.text       start:0x00036D70 end:0x00037DF0 align:16
+	.rodata     start:0x00001EF0 end:0x00002028
+	.data       start:0x0000B5D8 end:0x0000BBF8
+
+REL/menu/menu_27.cpp:
+	.text       start:0x00037DF0 end:0x00038B70 align:16
+	.rodata     start:0x00002028 end:0x00002050
+	.data       start:0x0000BBF8 end:0x0000C0B8
+
+REL/menu/menu_28.cpp:
+	.text       start:0x00038B70 end:0x00039430 align:16
+	.rodata     start:0x00002050 end:0x00002070
+	.data       start:0x0000C0B8 end:0x0000C580
+
+REL/menu/menu_29.cpp:
+	.text       start:0x00039430 end:0x0003A240 align:16
+	.rodata     start:0x00002070 end:0x00002150
+	.data       start:0x0000C580 end:0x0000CBC0
+
+REL/menu/menu_30.cpp:
+	.text       start:0x0003A240 end:0x0003AF50 align:16
+	.rodata     start:0x00002150 end:0x00002190
+	.data       start:0x0000CBC0 end:0x0000CEC8
+
+REL/menu/menu_31.cpp:
+	.text       start:0x0003AF50 end:0x00040AD0 align:16
+	.rodata     start:0x00002190 end:0x00002298
+	.data       start:0x0000CEC8 end:0x0000D750
+	.bss        start:0x000000B8 end:0x000000C0
+
+REL/menu/menu_32.cpp:
+	.text       start:0x00040AD0 end:0x00042BE0 align:16
+	.rodata     start:0x00002298 end:0x00002330
+	.data       start:0x0000D750 end:0x0000DE20
+	.bss        start:0x000000C0 end:0x000000C8
+
+REL/menu/menu_33.cpp:
+	.text       start:0x00042BE0 end:0x00044670 align:16
+	.rodata     start:0x00002330 end:0x00002348
+	.data       start:0x0000DE20 end:0x0000E438
+
+REL/menu/menu_34.cpp:
+	.text       start:0x00044670 end:0x00044B00 align:16
+	.rodata     start:0x00002348 end:0x00002350
+	.data       start:0x0000E438 end:0x0000E510
+
+REL/menu/menu_35.cpp:
+	.text       start:0x00044B00 end:0x00046950 align:16
+	.rodata     start:0x00002350 end:0x00002390
+	.data       start:0x0000E510 end:0x0000E990
+	.bss        start:0x000000C8 end:0x000000D0
+
+REL/menu/menu_36.cpp:
+	.text       start:0x00046950 end:0x00047770 align:16
+	.rodata     start:0x00002390 end:0x000023B8
+	.data       start:0x0000E990 end:0x0000EE50
+
+REL/menu/menu_37.cpp:
+	.text       start:0x00047770 end:0x0004CFD0 align:16
+	.ctors      start:0x0000000C end:0x00000010
+	.rodata     start:0x000023B8 end:0x000023F8
+	.data       start:0x0000EE50 end:0x0000FAD8
+	.bss        start:0x000000D0 end:0x00000100
+
+REL/menu/menu_38.cpp:
+	.text       start:0x0004CFD0 end:0x00055240 align:16
+	.rodata     start:0x000023F8 end:0x00002468
+	.data       start:0x0000FAD8 end:0x00010280
+	.bss        start:0x00000100 end:0x00000108
+
+REL/menu/menu_39.cpp:
+	.text       start:0x00055240 end:0x00058110 align:16
+	.rodata     start:0x00002468 end:0x00002DD8
+	.data       start:0x00010280 end:0x00010D70
+	.bss        start:0x00000108 end:0x00004430
+
+REL/menu/menu_40.cpp:
+	.text       start:0x00058110 end:0x00058ED0 align:16
+	.ctors      start:0x00000010 end:0x00000014
+	.data       start:0x00010D70 end:0x00010F40
+	.bss        start:0x00004430 end:0x000045A8
+
+REL/menu/menu_41.cpp:
+	.text       start:0x00058ED0 end:0x00059880 align:16
+	.rodata     start:0x00002DD8 end:0x00002E20
+	.data       start:0x00010F40 end:0x000110D8
+
+REL/menu/menu_42.cpp:
+	.text       start:0x00059880 end:0x00082090 align:16
+	.ctors      start:0x00000014 end:0x00000018
+	.rodata     start:0x00002E20 end:0x00003300
+	.data       start:0x000110D8 end:0x0002F6A8
+	.bss        start:0x000045A8 end:0x00004700
+
+REL/menu/menu_43.cpp:
+	.text       start:0x00082090 end:0x00085730 align:16
+	.rodata     start:0x00003300 end:0x00003380
+	.data       start:0x0002F6A8 end:0x0002FC20
+
+REL/menu/menu_44.cpp:
+	.text       start:0x00085730 end:0x00090298 align:16
+	.rodata     start:0x00003380 end:0x00003560
+	.data       start:0x0002FC20 end:0x00030F20
+	.bss        start:0x00004700 end:0x00004780

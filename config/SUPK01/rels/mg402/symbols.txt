@@ -1,6 +1,6 @@
 __register_global_object = .text:0x00000000; // type:function size:0x1C scope:global data:4byte
 __destroy_global_chain = .text:0x00000020; // type:function size:0x54 scope:global
-fn_60_80 = .text:0x00000080; // type:function size:0x998
+fn_60_80 = .text:0x00000080; // type:function size:0x998 align:16
 fn_60_A20 = .text:0x00000A20; // type:function size:0x268
 fn_60_C90 = .text:0x00000C90; // type:function size:0x24
 _prolog = .text:0x00000CC0; // type:function size:0x5C scope:global
