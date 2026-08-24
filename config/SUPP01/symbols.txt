@@ -2786,7 +2786,7 @@ CalcAhead_ParticleBoth_Origin__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4mat
 __dt__Q34nw4r2ef24DrawSmoothStripeStrategyFv = .text:0x800CAC20; // type:function size:0x40
 GetEmitterParam__Q34nw4r2ef10ResEmitterFv = .text:0x800CAC60; // type:function size:0x10
 GetParticleParam__Q34nw4r2ef10ResEmitterFv = .text:0x800CAC70; // type:function size:0x18
-fn_800CAC90 = .text:0x800CAC90; // type:function size:0xC
+GetTranslate__Q34nw4r2ef15ResEmitterParamCFv = .text:0x800CAC90; // type:function size:0xC
 SetEmitEmit__Q34nw4r2ef15ResEmitterParamFf = .text:0x800CACA0; // type:function size:0xC
 fn_800CACB0 = .text:0x800CACB0; // type:function size:0x38
 fn_800CACF0 = .text:0x800CACF0; // type:function size:0x50
