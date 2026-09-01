@@ -216,6 +216,97 @@ Revolution/HBM/seq.cpp:
 	.data       start:0x8020CE70 end:0x8020CEF0
 	.bss        start:0x80246370 end:0x80246378
 
+RVLFaceLib/RFL_System.c:
+	extab       start:0x80006720 end:0x80006748
+	extabindex  start:0x80006BC0 end:0x80006BFC
+	.text       start:0x80099A70 end:0x8009A520
+	.rodata     start:0x801E6978 end:0x801E6988
+	.data       start:0x8020CEF0 end:0x8020CF48
+	.sdata      start:0x802F3770 end:0x802F3778
+	.sbss       start:0x802F3FC0 end:0x802F3FD0
+
+RVLFaceLib/RFL_NANDLoader.c:
+	extab       start:0x80006748 end:0x800067C8
+	extabindex  start:0x80006BFC end:0x80006CBC
+	.text       start:0x8009A520 end:0x8009B5C0
+	.rodata     start:0x801E6988 end:0x801E6A18
+	.data       start:0x8020CF48 end:0x8020CF68
+	.sdata      start:0x802F3778 end:0x802F3780
+
+RVLFaceLib/RFL_NANDAccess.c:
+	extab       start:0x800067C8 end:0x80006840
+	extabindex  start:0x80006CBC end:0x80006D70
+	.text       start:0x8009B5C0 end:0x8009CE00
+	.data       start:0x8020CF68 end:0x8020CFF0
+	.sdata      start:0x802F3780 end:0x802F3788
+	.sdata2     start:0x802F4DA8 end:0x802F4DB0
+	.sbss2      start:0x802F68A8 end:0x802F68B0
+
+RVLFaceLib/RFL_Model.c:
+	extab       start:0x80006840 end:0x800068C8
+	extabindex  start:0x80006D70 end:0x80006E3C
+	.text       start:0x8009CE00 end:0x8009F200
+	.rodata     start:0x801E6A18 end:0x801E6B28
+	.sdata2     start:0x802F4DB0 end:0x802F4DF0
+
+RVLFaceLib/RFL_MakeTex.c:
+	extab       start:0x800068C8 end:0x80006908
+	extabindex  start:0x80006E3C end:0x80006E9C
+	.text       start:0x8009F200 end:0x800A19A0
+	.rodata     start:0x801E6B28 end:0x801E6BE8
+	.sdata2     start:0x802F4DF0 end:0x802F4EB0
+
+RVLFaceLib/RFL_Icon.c:
+	extab       start:0x80006908 end:0x80006920
+	extabindex  start:0x80006E9C end:0x80006EC0
+	.text       start:0x800A19A0 end:0x800A1F10
+	.rodata     start:0x801E6BE8 end:0x801E6C28
+	.sdata2     start:0x802F4EB0 end:0x802F4EF0
+
+RVLFaceLib/RFL_HiddenDatabase.c:
+	extab       start:0x80006920 end:0x80006928
+	extabindex  start:0x80006EC0 end:0x80006ECC
+	.text       start:0x800A1F10 end:0x800A1F50
+
+RVLFaceLib/RFL_Database.c:
+	extab       start:0x80006928 end:0x800069A0
+	extabindex  start:0x80006ECC end:0x80006F80
+	.text       start:0x800A1F50 end:0x800A2E70
+
+RVLFaceLib/RFL_Controller.c:
+	extab       start:0x800069A0 end:0x800069B0
+	extabindex  start:0x80006F80 end:0x80006F98
+	.text       start:0x800A2E70 end:0x800A3110
+
+RVLFaceLib/RFL_MiddleDatabase.c:
+	extab       start:0x800069B0 end:0x800069C8
+	extabindex  start:0x80006F98 end:0x80006FBC
+	.text       start:0x800A3110 end:0x800A3420
+
+RVLFaceLib/RFL_DefaultDatabase.c:
+	.text       start:0x800A3420 end:0x800A3440
+	.rodata     start:0x801E6C28 end:0x801E6DE8
+
+RVLFaceLib/RFL_DataUtility.c:
+	extab       start:0x800069C8 end:0x800069F0
+	extabindex  start:0x80006FBC end:0x80006FF8
+	.text       start:0x800A3440 end:0x800A3CC0
+	.rodata     start:0x801E6DE8 end:0x801E6DF8
+
+RVLFaceLib/RFL_Format.c:
+	extab       start:0x800069F0 end:0x800069F8
+	extabindex  start:0x80006FF8 end:0x80007004
+	.text       start:0x800A3CC0 end:0x800A3D80
+
+wp/CMikeVoiceManager.cpp:
+	.text       start:0x800A3D80 end:0x800A48E0
+	.ctors      start:0x801DCB0C end:0x801DCB10
+	.data       start:0x8020CFF0 end:0x8020D028
+	.bss        start:0x80246378 end:0x802467D8
+	.sdata      start:0x802F3788 end:0x802F3790
+	.sbss       start:0x802F3FD0 end:0x802F4000
+	.sdata2     start:0x802F4EF0 end:0x802F4EF8
+
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C73F4 end:0x801C7454
 	.sbss       start:0x802F4928 end:0x802F4930

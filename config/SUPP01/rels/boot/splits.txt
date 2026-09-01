@@ -6,7 +6,7 @@ Sections:
 	.data       type:data align:32
 	.bss        type:bss align:32
 
-REL/boot/boot.cpp:
+wp/boot/boot.cpp:
 	.text       start:0x00000000 end:0x00000404 align:16
 	.rodata     start:0x00000000 end:0x00000010
 	.data       start:0x00000000 end:0x00000098
