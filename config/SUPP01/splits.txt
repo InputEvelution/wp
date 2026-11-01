@@ -474,7 +474,101 @@ NW4R/ef/ef_res_emitter_ac.cpp:
 	.text       start:0x800CAC60 end:0x800CAC90
 
 NW4R/ef/ef_res_emitterparam_ac.cpp:
-	.text       start:0x800CAC90 end:0x800CACB0
+	.text       start:0x800CAC90 end:0x800CACF0
+
+NW4R/g3d/g3d_rescommon.cpp:
+	.text       start:0x800CACF0 end:0x800CAEA0
+
+NW4R/g3d/g3d_resdict.cpp:
+	.text       start:0x800CAEA0 end:0x800CB1C0
+
+NW4R/g3d/g3d_resfile.cpp:
+	.text       start:0x800CB1C0 end:0x800CCC10
+	.data       start:0x8020F380 end:0x8020F4E0
+
+NW4R/g3d/g3d_resmdl.cpp:
+	.text       start:0x800CCC10 end:0x800CE100
+
+NW4R/g3d/g3d_resshp.cpp:
+	.text       start:0x800CE100 end:0x800CE850
+
+NW4R/g3d/g3d_restev.cpp:
+	.text       start:0x800CE850 end:0x800CF010
+	.rodata     start:0x801E8E20 end:0x801E8E80
+	.data       start:0x8020F4E0 end:0x8020F4F0
+
+NW4R/g3d/g3d_resmat.cpp:
+	.text       start:0x800CF010 end:0x800D1080
+	.sdata2     start:0x802F72F0 end:0x802F7328
+	.data       start:0x8020F4F0 end:0x8020F560
+
+NW4R/g3d/g3d_resvtx.cpp:
+	.text       start:0x800D1080 end:0x800D14D0
+
+NW4R/g3d/g3d_restex.cpp:
+	.text       start:0x800D14D0 end:0x800D16A0
+
+NW4R/g3d/g3d_resnode.cpp:
+	.text       start:0x800D16A0 end:0x800D2500
+	.sdata2     start:0x802F7328 end:0x802F7338
+
+NW4R/g3d/g3d_resanm.cpp:
+	.text       start:0x800D2500 end:0x800D2760
+	.sdata2     start:0x802F7338 end:0x802F7350
+
+NW4R/g3d/g3d_resanmvis.cpp:
+	.text       start:0x800D2760 end:0x800D2880
+	.sdata2     start:0x802F7350 end:0x802F7360
+
+NW4R/g3d/g3d_resanmclr.cpp:
+	.text       start:0x800D2880 end:0x800D29F0
+	.sdata2     start:0x802F7360 end:0x802F7370
+
+NW4R/g3d/g3d_resanmtexpat.cpp:
+	.text       start:0x800D29F0 end:0x800D3380
+	.sdata2     start:0x802F7370 end:0x802F7378
+
+NW4R/g3d/g3d_resanmchr.cpp:
+	.text       start:0x800D3380 end:0x800D4E10
+	.rodata     start:0x801E8E80 end:0x801E8EA0
+	.sdata2     start:0x802F7378 end:0x802F7398
+
+NW4R/g3d/g3d_reslightset.cpp:
+	.text       start:0x800D4E10 end:0x800D4FC0
+
+NW4R/g3d/g3d_resanmamblight.cpp:
+	.text       start:0x800D4FC0 end:0x800D5090
+	.sdata2     start:0x802F7398 end:0x802F73A8
+
+NW4R/g3d/g3d_resanmlight.cpp:
+	.text       start:0x800D5090 end:0x800D5480
+	.sdata2     start:0x802F73A8 end:0x802F73B8
+
+NW4R/g3d/g3d_resanmfog.cpp:
+	.text       start:0x800D5480 end:0x800D55E0
+	.sdata2     start:0x802F73B8 end:0x802F73C8
+
+NW4R/g3d/g3d_resanmcamera.cpp:
+	.text       start:0x800D55E0 end:0x800D58F0
+
+NW4R/g3d/g3d_resanmscn.cpp:
+	.text       start:0x800D58F0 end:0x800D6460
+	.data       start:0x8020F560 end:0x8020F600
+
+NW4R/g3d/g3d_resanmshp.cpp:
+	.text       start:0x800D6460 end:0x800D65D0
+	.sdata2     start:0x802F73C8 end:0x802F73D0
+
+NW4R/g3d/g3d_transform.cpp:
+	.text       start:0x800D65D0 end:0x800D68E0
+	.sdata2     start:0x802F73D0 end:0x802F73D8
+
+NW4R/g3d/g3d_anmvis.cpp:
+	.text       start:0x800D68E0 end:0x800D7070
+	.rodata     start:0x801E8EA0 end:0x801E8EC8
+	.data       start:0x8020F600 end:0x8020F688
+	.sdata      start:0x802F5738 end:0x802F5740
+	.sdata2     start:0x802F73D8 end:0x802F73E8
 
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x801C7944 end:0x801C79A4
